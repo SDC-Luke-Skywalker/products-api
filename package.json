@@ -1,0 +1,25 @@
+{
+  "name": "products-api",
+  "version": "1.0.0",
+  "description": "product-api for FEC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "insert": "nodemon src/pg.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SDC-Luke-Skywalker/products-api.git"
+  },
+  "author": "yaritorres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SDC-Luke-Skywalker/products-api/issues"
+  },
+  "homepage": "https://github.com/SDC-Luke-Skywalker/products-api#readme",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "jquery-csv": "^1.0.21",
+    "pg": "^8.8.0"
+  }
+}

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "insert": "nodemon src/pg.js"
+    "start": "nodemon server/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,8 +18,9 @@
   },
   "homepage": "https://github.com/SDC-Luke-Skywalker/products-api#readme",
   "dependencies": {
+    "axios": "^0.27.2",
     "dotenv": "^16.0.2",
-    "jquery-csv": "^1.0.21",
+    "express": "^4.18.1",
     "pg": "^8.8.0"
   }
 }

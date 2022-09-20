@@ -9,8 +9,8 @@ app.use(express.json());
 app.listen(process.env.PORT);
 console.log(`Listening on port ${process.env.PORT}`);
 
-app.get(`/products`, (req, res) => {
-  postgres.getProducts(null, null)
+app.get(`/products/`, (req, res) => {
+  postgres.getProducts(req.query.count, req.query.page)
   .then(data => {
     res.send(data.rows);
   })

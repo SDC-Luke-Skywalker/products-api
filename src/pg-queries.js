@@ -1,7 +1,7 @@
 require('dotenv').config();
-const { Client } = require('pg');
+const { Client, Pool } = require('pg');
 
-const db = new Client ({
+const db = new Pool ({
   user: process.env.USER,
   host: process.env.HOST,
   database: process.env.DB,
@@ -9,7 +9,7 @@ const db = new Client ({
   port: process.env.DB_PORT
 })
 
-db.connect();
+//db.connect();
 
 const getProducts = (limit = 5, page) => {
     return db.query(`

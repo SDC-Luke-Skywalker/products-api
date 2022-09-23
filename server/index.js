@@ -9,6 +9,8 @@ app.use(express.json());
 app.listen(process.env.PORT);
 console.log(`Listening on port ${process.env.PORT}`);
 
+app.get('/loaderio-7af101d423d08fdba16f7631cb4253a8.txt', (req, res) => res.status(200).send('loaderio-7af101d423d08fdba16f7631cb4253a8'));
+
 app.get(`/products/`, (req, res) => {
   postgres.getProducts(req.query.count, req.query.page)
   .then(data => {
